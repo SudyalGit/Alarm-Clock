@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#clock-img{
+    width: 18%;
+    margin-top: 3vh;
+    transition: all 0.2s;
+}
+
+#clock-img:hover{
+    padding: 10px;
+}
+
+#real-time{
+    text-align: center;
+    width: 40%;
+    color: rgb(117, 7, 23);
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: monospace;
+    margin-top: 3vh;
+    transition: all 0.2s ease-in-out;
+}
+
+#real-time:hover{
+    font-size: 5.5rem;
+}
+
+#alarm-inputs{
+    font-family: monospace;
+    background-color: rgb(155, 211, 211);
+    display: flex;
+    margin-top: 3vh;
+    width: 80%;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#alarm-time-box{
+    width: 25%;
+    font-size: 1rem;
+}
+
+#alarm-time-box input{
+    cursor: pointer;
+    font-weight:900;
+    background-color: #e7e7dd;
+}
+
+#alarm-time-box input:hover{
+    background-color: rgba(231, 231, 221, 0.9);
+}
+
+#alarm-title{
+    font-family: monospace;
+    font-weight: 900;
+    background-color: #e7e7dd;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    width: 70%;
+    height: 4vh;
+}
+
+#alarm-title:hover{
+    background-color: rgba(231, 231, 221, 0.9);
+}
+
+#alarm-inputs>button{
+    border-color: black;
+    border-radius: 40%;
+    background-color: rgb(197, 197, 170);
+    width: 2%;
+    cursor: pointer;
+}
+
+#alarm-inputs>button:hover{
+    background-color: rgb(150, 150, 109);
+}
+
+#create-btn{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+#alarms-list{
+    font-family: monospace;
+    display: flex;
+    margin-top: 2vh;
+    width: 80%;
+    background-color: #e7e7dd;
+    flex-direction: column;
+}
+
+.item-list{
+    border: 1px solid #b6b68e;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alarms-list-time{
+    width: 15%;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+.alarms-list-title{
+    width: 80%;
+    font-size: 1.1rem;
+}
+
+.delete-btn{
+    font-size: 1.5rem;
+    color: red;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    font-size: 1.6rem;
+}

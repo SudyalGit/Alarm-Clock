@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Alarm Clock</title>
+
+    <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway:wght@500&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <!-- Clock image -->
+        <img id="clock-img" src="static/clock.png" alt="clock-img">
+
+        <!-- Real-Time -->
+        <div id="real-time">
+            <!-- <span>12:00:00 AM</span> -->
+        </div>
+
+        <!-- Alarm input Box -->
+        <div id="alarm-inputs">
+            <div id="alarm-time-box">
+                <label for="alarm-time">Set the alarm time: </label>
+                <input type="time" id="alarm-time" value="00:00" required>
+            </div>
+            <input type="text" name="alarm-title" id="alarm-title" placeholder="Enter the title">
+            <button><i id="create-btn" class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <!-- Alarm lists -->
+        <ul type="none" id="alarms-list">
+            <!-- <li class="item-list">
+                <span class="alarms-list-time">Time</span>
+                <span class="alarms-list-title">Title</span>
+                <i data-id="" class="fa fa-trash-o alarms-list-item trash-icon delete-btn" aria-hidden="true"></i>
+            </li> -->
+        </ul>
+    </div>
+    
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
